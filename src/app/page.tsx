@@ -4,7 +4,7 @@ import Signup from "@/components/onboarding/Signup";
 import Login from "@/components/onboarding/Login";
 export default function Home() {
   return (
-    <main className=" ">
+    <main>
       <div className=" flex flex-col items-center justify-between h-screen">
         <div className=" flex flex-col items-center justify-center">
           <div className="pt-8">
