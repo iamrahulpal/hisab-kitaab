@@ -1,6 +1,11 @@
-export default function Home() {
+import Image from "next/image";
+import Illustration from "../../../public/Images/Illustration.png";
+import Signup from "@/components/onboarding/Signup";
+import Login from "@/components/onboarding/Login";
+
+export default function Onboard() {
   return (
-    <main>
+    <main className=" ">
       <div className=" flex flex-col items-center justify-between h-screen">
         <div className=" flex flex-col items-center justify-center">
           <div className="pt-8">
