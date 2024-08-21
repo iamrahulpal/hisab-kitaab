@@ -4,8 +4,6 @@ import { Area, AreaChart, CartesianGrid, XAxis } from "recharts";
 import {
   Card,
   CardContent,
-  CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -16,16 +14,16 @@ import {
   ChartTooltipContent,
 } from "@/components/ui/chart";
 const chartData = [
-  { desktop: 186 },
-  { desktop: 305 },
-  { desktop: 237 },
-  { desktop: 73 },
-  { desktop: 209 },
-  { desktop: 214 },
+  { mobile: 22 },
+  { mobile: 44 },
+  { mobile: 120 },
+  { mobile: 190 },
+  { mobile: 130 },
+  { mobile: 140 },
 ];
 const chartConfig = {
-  desktop: {
-    label: "Desktop",
+  mobile: {
+    label: "Mobile",
     color: "hsl(var(--chart-2))",
   },
 } satisfies ChartConfig;
@@ -37,12 +35,8 @@ export default function Graph() {
       </CardHeader>
       <CardContent>
         <ChartContainer config={chartConfig}>
-          <AreaChart
-            accessibilityLayer
-            data={chartData}
-            
-          >
-            <CartesianGrid vertical={false} />
+          <AreaChart accessibilityLayer data={chartData}>
+            <CartesianGrid vertical={false} horizontal={false} />
             <XAxis
               dataKey="month"
               tickLine={false}
@@ -50,16 +44,28 @@ export default function Graph() {
               tickMargin={8}
               tickFormatter={(value) => value.slice(0, 3)}
             />
-            <ChartTooltip
-              cursor={false}
-              content={<ChartTooltipContent indicator="line" />}
-            />
+            <ChartTooltip cursor={false} content={<ChartTooltipContent />} />
+            <defs>
+              <linearGradient id="fillMobile" x1="0" y1="0" x2="0" y2="1">
+                <stop
+                  offset="0%"
+                  stopColor="var(--color-mobile)"
+                  stopOpacity={0.8}
+                />
+                <stop
+                  offset="80%"
+                  stopColor="var(--color-mobile)"
+                  stopOpacity={0}
+                />
+              </linearGradient>
+            </defs>
             <Area
-              dataKey="desktop"
+              dataKey="mobile"
               type="natural"
-              fill="var(--color-desktop)"
-              fillOpacity={0.4}
-              stroke="var(--color-desktop)"
+              fill="url(#fillMobile)"
+              fillOpacity={0.7}
+              stroke="var(--color-mobile)"
+              stackId="a"
             />
           </AreaChart>
         </ChartContainer>
