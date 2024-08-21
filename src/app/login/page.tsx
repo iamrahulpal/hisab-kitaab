@@ -38,7 +38,7 @@ export default function Login() {
         </div>
       
         {/* Login Button */}
-        <div className="my-9 space-y-3">
+        <div className="my-9 space-y-3 flex justify-center items-center">
           <LoginButton />
         </div>
 
