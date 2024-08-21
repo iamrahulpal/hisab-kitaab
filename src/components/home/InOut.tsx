@@ -4,7 +4,7 @@ import { FaMoneyCheckDollar } from "react-icons/fa6";
 
 export default function InOut() {
   return (
-    <div className=" mt-[27px] px-4 flex justify-center space-x-4">
+    <div className=" mt-[27px] px-4 flex justify-evenly space-x-4">
       <div className="flex items-center p-4 w-[164px]  h-20 border rounded-[28px] bg-[#00A86B] space-x-[10px]">
         <div className=" h-12 w-12 rounded-[16px] bg-white flex flex-col justify-center items-center">
           <FaArrowDown className=" h-[10px] w-[10px] text-[#00A86B]" />
