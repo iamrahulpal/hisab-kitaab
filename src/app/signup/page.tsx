@@ -10,7 +10,7 @@ export default function Home() {
       {/* Navbar */}
       <div className="p-4  flex items-center">
         <Link href={"/"}>
-        <Image src={leftArrow} alt="leftArrow" />
+          <Image src={leftArrow} alt="leftArrow" />
         </Link>
         <div className=" w-full mr-12">
           <p className=" text-[#212325] text-lg font-semibold text-center">
@@ -20,7 +20,7 @@ export default function Home() {
       </div>
 
       {/* Form */}
-      <div className="px-4 mt-14">
+      <div className="px-4 mt-14 ">
         <div className=" space-y-6">
           <div className=" border border-[#F1F1FA] px-4 py-3 rounded-2xl">
             <input
@@ -58,16 +58,16 @@ export default function Home() {
             </span>
           </label>
         </div>
-        {/* Sinup Button */}
-        <div className="mt-[27px] space-y-3">
-          <Signup />
-          <p className="text-[#91919F] text-center">
-            Already have an account?{" "}
-            <span className="underline underline-offset-4 text-[#7F3DFF] text-[16px]">
-              Login
-            </span>
-          </p>
-        </div>
+      </div>
+      {/* Sinup Button */}
+      <div className="mt-[27px] space-y-3 flex flex-col justify-center items-center">
+        <Signup />
+        <p className="text-[#91919F] text-center">
+          Already have an account?{" "}
+          <span className="underline underline-offset-4 text-[#7F3DFF] text-[16px]">
+            Login
+          </span>
+        </p>
       </div>
     </form>
   );
