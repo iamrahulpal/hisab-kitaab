@@ -17,7 +17,7 @@ export default function Navbar() {
         <p className=" text-[#212325] text-sm">February</p>
       </button>
       {/* Notification */}
-      <FaBell className=" h-8 w-8 text-[#7F3DFF]" />
+      <FaBell className=" h-7 w-7 text-[#7F3DFF]" />
     </div>
   );
 }

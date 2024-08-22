@@ -9,16 +9,16 @@ import {
   ChartTooltipContent,
 } from "@/components/ui/chart";
 const chartData = [
-  { mobile: 22 },
-  { mobile: 44 },
-  { mobile: 120 },
-  { mobile: 190 },
-  { mobile: 130 },
-  { mobile: 140 },
+  { expense: 22 },
+  { expense: 44 },
+  { expense: 120 },
+  { expense: 190 },
+  { expense: 130 },
+  { expense: 140 },
 ];
 const chartConfig = {
-  mobile: {
-    label: "Mobile",
+  expense: {
+    label: "Expense",
     color: "#7F3DFF",
   },
 } satisfies ChartConfig;
@@ -41,25 +41,25 @@ export default function Graph() {
             />
             <ChartTooltip cursor={false} content={<ChartTooltipContent />} />
             <defs>
-              <linearGradient id="fillMobile" x1="0" y1="0" x2="0" y2="1">
+              <linearGradient id="fillexpense" x1="0" y1="0" x2="0" y2="1">
                 <stop
                   offset="0%"
-                  stopColor="var(--color-mobile)"
+                  stopColor="var(--color-expense)"
                   stopOpacity={0.8}
                 />
                 <stop
                   offset="80%"
-                  stopColor="var(--color-mobile)"
+                  stopColor="var(--color-expense)"
                   stopOpacity={0}
                 />
               </linearGradient>
             </defs>
             <Area
-              dataKey="mobile"
+              dataKey="expense"
               type="natural"
-              fill="url(#fillMobile)"
+              fill="url(#fillexpense)"
               fillOpacity={0.7}
-              stroke="var(--color-mobile)"
+              stroke="var(--color-expense)"
               stackId="a"
             />
           </AreaChart>
