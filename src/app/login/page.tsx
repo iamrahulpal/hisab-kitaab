@@ -2,6 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import leftArrow from "../../../public/Images/arrow-left.svg";
 import LoginButton from "@/components/login/Login";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { AlertDestructive } from "@/components/utiity/Alert";
 
 export default function Login() {
   return (
@@ -36,7 +38,7 @@ export default function Login() {
             />
           </div>
         </div>
-      
+
         {/* Login Button */}
         <div className="my-9 space-y-3 flex justify-center items-center">
           <LoginButton />
@@ -46,12 +48,12 @@ export default function Login() {
         <div className="text-[18px] mb-[38px] font-semibold text-center text-[#7F3DFF]">
           Forgot Password?
         </div>
-          <p className="text-[#91919F] text-center">
+        <p className="text-[#91919F] text-center">
           Don’t have an account yet?{" "}
-            <span className="underline underline-offset-4 text-[#7F3DFF] text-[16px]">
-              Sign Up
-            </span>
-          </p>
+          <span className="underline underline-offset-4 text-[#7F3DFF] text-[16px]">
+            Sign Up
+          </span>
+        </p>
       </div>
     </form>
   );

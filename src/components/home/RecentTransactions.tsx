@@ -29,7 +29,7 @@ export default function RecentTransactions() {
           </div>
 
           <div className="flex flex-col justify-between my-[4px] text-right">
-            <p className=" text-base font-semibold text-[#FD3C4A]">- $120</p>
+            <p className=" text-base font-semibold text-[#FD3C4A]">- ₹120</p>
             <p className=" text-[13px] text-[#91919F]">10:00 AM</p>
           </div>
         </div>
@@ -47,7 +47,7 @@ export default function RecentTransactions() {
           </div>
 
           <div className="flex flex-col justify-between my-[4px] text-right">
-            <p className=" text-base font-semibold text-[#FD3C4A]">- $37</p>
+            <p className=" text-base font-semibold text-[#FD3C4A]">- ₹37</p>
             <p className=" text-[13px] text-[#91919F]">01:23 AM</p>
           </div>
         </div>
@@ -65,7 +65,7 @@ export default function RecentTransactions() {
           </div>
 
           <div className="flex flex-col justify-between my-[4px] text-right">
-            <p className=" text-base font-semibold text-[#FD3C4A]">- $75</p>
+            <p className=" text-base font-semibold text-[#FD3C4A]">- ₹75</p>
             <p className=" text-[13px] text-[#91919F]">08:35 PM</p>
           </div>
         </div>
@@ -84,7 +84,7 @@ export default function RecentTransactions() {
           </div>
 
           <div className="flex flex-col justify-between my-[4px] text-right">
-            <p className=" text-base font-semibold text-[#FD3C4A]">- $10</p>
+            <p className=" text-base font-semibold text-[#FD3C4A]">- ₹10</p>
             <p className=" text-[13px] text-[#91919F]">11:07 PM</p>
           </div>
         </div>
