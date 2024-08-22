@@ -2,8 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import leftArrow from "../../../public/Images/arrow-left.svg";
 import LoginButton from "@/components/login/Login";
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
-import { AlertDestructive } from "@/components/utiity/Alert";
 
 export default function Login() {
   return (

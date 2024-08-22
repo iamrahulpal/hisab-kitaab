@@ -1,6 +1,7 @@
 import { FaBagShopping } from "react-icons/fa6";
 import { RiRestaurantFill } from "react-icons/ri";
 import { FaRegCreditCard } from "react-icons/fa";
+import Link from "next/link";
 export default function RecentTransactions() {
   return (
     <>
@@ -9,9 +10,11 @@ export default function RecentTransactions() {
           <p className="text-lg font-semibold text-[#292B2D]">
             Recent Transaction
           </p>
+          <Link href={"/transaction"}> 
           <button className=" h-8 px-4 border bg-[#EEE5FF] rounded-full text-[#7F3DFF] text-[14px]">
             See All
           </button>
+          </Link>
         </div>
         {/* Transaction List */}
         <div className=" flex flex-col space-y-2">
