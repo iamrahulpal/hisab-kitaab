@@ -1,6 +1,8 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { RxChevronDown } from "react-icons/rx";
 import { FaBell } from "react-icons/fa";
+import Month from "./Month";
+
+
 export default function Navbar() {
   return (
     <div className="py-3 px-4 flex justify-between items-center bg-gradient-to-b from-[#FFF6E5]">
@@ -12,10 +14,7 @@ export default function Navbar() {
         </Avatar>
       </button>
       {/* Current Month */}
-      <button className=" flex items-center space-x-1 border border-[#F1F1FA] py-2 pl-2 pr-4 rounded-[40px]">
-        <RxChevronDown className=" h-6 w-6" />
-        <p className=" text-[#212325] text-sm">February</p>
-      </button>
+        <Month />
       {/* Notification */}
       <FaBell className=" h-7 w-7 text-[#7F3DFF]" />
     </div>
