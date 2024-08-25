@@ -10,7 +10,6 @@ import { RxChevronDown } from "react-icons/rx";
 
 export default function Month() {
   return (
-    <button className=" ">
       <DropdownMenu>
         <DropdownMenuTrigger className=" outline-none">
           <div className="flex items-center space-x-1 border border-[#F1F1FA] py-2 pl-2 pr-4 rounded-[40px]">
@@ -26,6 +25,5 @@ export default function Month() {
           <DropdownMenuItem>May</DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
-    </button>
   );
 }
