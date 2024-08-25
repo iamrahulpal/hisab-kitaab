@@ -38,6 +38,7 @@ export default function Home() {
           <ExpenseNavbar />
           <ExpenseForm />
         </TabsContent>
+
         <TabsContent  className="mt-0"  value="add">
           <div className=" blur-sm">
             <div className="bg-gradient-to-b from-[#FFF6E5]">
@@ -49,6 +50,7 @@ export default function Home() {
             <Tab />
             <RecentTransactions />
           </div>
+          
           </div>
           <div className="  bottom-28  right-24 fixed">
             <AddExpense />
@@ -57,6 +59,7 @@ export default function Home() {
             <AddIncome />
           </div>
         </TabsContent>
+
         <TabsList
           className="  flex py-11[px] left-0 right-0 bottom-0 fixed h-[70px] bg-[#FCFCFC] justify-around
          "
@@ -72,6 +75,7 @@ export default function Home() {
               <p className="text-[10px]">Home</p>
             </div>
           </TabsTrigger>
+
           <TabsTrigger
             value="transaction"
             className="data-[state=active]:text-[#7F3DFF] data-[state=active]:bg-transparent
@@ -83,6 +87,7 @@ export default function Home() {
               <p className="text-[10px]">Transaction</p>
             </div>
           </TabsTrigger>
+
           <TabsTrigger
             value="add"
             className="data-[state=active]:text-[#7F3DFF] data-[state=active]:bg-transparent 
@@ -90,9 +95,10 @@ export default function Home() {
             "
           >
             <div className="flex flex-col justify-center items-center absolute bottom-[23px]">
-              <IoIosAddCircle className=" h-16 w-16 text-[#7F3DFF]  " />
+              <IoIosAddCircle className=" h-16 w-16 text-[#7F3DFF] active:text-[#9d78e8] " />
             </div>
           </TabsTrigger>
+
           <TabsTrigger
             value="analytics"
             className="data-[state=active]:text-[#7F3DFF] data-[state=active]:bg-transparent 
@@ -104,6 +110,7 @@ export default function Home() {
               <p className="text-[10px]">Analytics</p>
             </div>
           </TabsTrigger>
+
           <TabsTrigger
             value="profile"
             className="data-[state=active]:text-[#7F3DFF] data-[state=active]:bg-transparent
