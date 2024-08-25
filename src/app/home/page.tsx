@@ -95,7 +95,7 @@ export default function Home() {
             "
           >
             <div className="flex flex-col justify-center items-center absolute bottom-[23px]">
-              <IoIosAddCircle className=" h-16 w-16 text-[#7F3DFF]  " />
+              <IoIosAddCircle className=" h-16 w-16 text-[#7F3DFF] active:text-[#9d78e8] " />
             </div>
           </TabsTrigger>
 

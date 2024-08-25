@@ -10,7 +10,7 @@ export default function Home() {
       {/* Navbar */}
       <div className="p-4  flex items-center">
         <Link href={"/"}>
-          <Image src={leftArrow} alt="leftArrow" />
+          <Image  src={leftArrow} alt="leftArrow" />
         </Link>
         <div className=" w-full mr-12">
           <p className=" text-[#212325] text-lg font-semibold text-center">
